@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/create',[App\Http\Controllers\PostController::class, 'create']);
+
+
+Route::get('/delete',[App\Http\Controllers\PostController::class, 'delete']);
+

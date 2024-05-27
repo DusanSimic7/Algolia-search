@@ -11,6 +11,7 @@ class Post extends Model
     use HasFactory, Searchable;
 
 
+    protected $guarded = [];
 
    /**
      * Get the indexable data array for the model.
